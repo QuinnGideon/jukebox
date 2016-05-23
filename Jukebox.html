@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+		<audio id= "current_song" src="audio/mario_grass.mp3">
+		</audio>
+
+			<div>
+				<p>
+					Title: <strong id="songTitle"></strong>
+				</p>
+				<p>
+					 Artist: <strong id="songArtist"></strong>
+				</p>
+			</div>
+
+			<div id="controls">
+		  	<button id="playButton">Play</button><br>
+		  	<button id="pauseButton">Pause</button>
+        <button id="rewind">Rewind</button><br>
+		  	<button id="stopButton">Stop</button>
+       	<button id="fastforward">F-Forward</button>
+		  	<button id="nextButton">Next</button>
+		  	<button id="shuffleButton">Shuffle</button>
+	  	</div>
+
+		<div id="glob_content">
+					<div id="title"> <strong>Add Songs Here </strong></div>
+					<div id="form_content">
+						<div>
+							<input type="text"  name="songname" placeholder="Song Name">
+							<input type="text" id="url" name="url" placeholder="Song's URL">
+							<input type="text" id="artist" name="artistname" placeholder="Artist Name">
+							<input type="submit" id="uploadButton" name="upload" value="Upload" class="buttons">
+						</div>
+					</div>
+			</div>
+
+		
+
+
+	<script src="script.js"></script>
+</body>
+</html>
